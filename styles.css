@@ -1,0 +1,67 @@
+body {
+  font-family: "Roboto",sans-serif;
+  height: 10%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+footer{
+  margin-top: auto
+}
+
+header.ui.menu {
+  background-color: #1a3263;
+}
+
+#leftMenu{
+margin-left: -30px;
+}
+
+#text {
+font-size: 1.5rem;
+}
+
+i {
+  color: white;
+}
+
+#aboutUs, #contactUs, #HLB, #reg {
+  color: white;
+  padding: 0.9rem;
+}
+
+.left-menu {
+  padding-right: 20px;
+}
+
+#aboutUs:hover, a#contactUs.item:hover{
+  background-color: white;
+  color: black;
+}
+
+a#HLB.item:hover, a#reg.item:hover{
+  text-decoration: underline;
+}
+
+a#reg.item{
+  font-weight: 100;
+}
+
+i.icon.youtube:hover, i.icon.instagram:hover, i.icon.pinterest:hover, i.icon.twitter:hover, i.icon.facebook:hover{
+color: rgb(53, 151, 225);
+}
+
+footer.footer {
+  text-align: center;
+  margin-top: 70px;
+  border-top: 1px solid #E5E5E5;
+}
+
+ .ui.footer.segment {
+    margin: 5em 0em 0em;
+    padding: 5em 0em;
+  }
+
+  #footerBack{
+    background: #1a3263;
+  }
