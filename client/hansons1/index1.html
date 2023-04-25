@@ -1,0 +1,164 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="css/styles1.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/semantic.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/semantic.min.js">
+    </script>
+    <style>
+       body{
+         background-color: #f0f0f0;
+         min-height: 100vh;
+         display: flex;
+          flex-direction: column;
+       }
+
+      @media only screen and (max-width: 600px) {
+         .hide{
+           display:none;
+         }
+         .search.icon{
+           display:none;
+         }
+
+      }
+      .container{
+       margin-top:98px;
+      }
+      footer.footer {
+        text-align: center;
+        margin-top: px;
+        border-top: 1px solid #E5E5E5;
+      }
+
+      .ui.footer.segment {
+          margin: 5em 0em 0em;
+          padding: 5em 0em;
+        }
+
+        #footerBack{
+          background: #1a3263;
+        }
+
+        footer{
+        margin-top: auto
+      }
+    </style>
+    <title>Hansons</title>
+</head>
+<body>
+  <div class="flex-wrapper">
+  <header>
+    <div class="ui fixed top attached menu" style="height:65px; background-color: #1a3263; margin-top:0;">
+        <a class="item" id="menu"><i class="large sidebar icon" style="color:white; width:10px;"></i></a> <img alt="" height="90%" width="10%" src="../assets/fulllogo.png" style="margin-top:5px" width="320px;">
+        <div class="right menu">
+            <div class="ui search" style="margin-top:4%; margin-left:-4%">
+                <div class="ui icon input">
+                    <input class="prompt hide" placeholder="How can we help?" style="border-radius:0; width:250px;" type="text"> <i class="search icon"></i>
+                </div>
+                <div class="results"></div>
+            </div>
+        </div>
+    </div>
+    <div class="ui visible left sidebar inverted vertical menu" style="margin-top:64px !important;display:block; width: 240px; height:91% !important;">
+        <div style="margin-top:10%; color:white;">
+            <center>
+                <img class="ui sqaure image" height="70px" src="../assets/Hansons.png" style="margin-top:2%" width="70px">
+                <h4>Hansons Auctioneers<br>
+                </h4><div class="footer-socials">
+                  <a href="https://www.facebook.com/HansonsAuctioneersUK/" target="_blank" rel="noopener">
+                    <i style:hover="color: #1a3263;" class="facebook f icon big"></i>
+                  </a>
+                  <a href="https://twitter.com/HansonsUK" target="_blank" rel="noopener">
+                    <i style:hover="color: #1a3263;" class="twitter icon big"></i>
+                  </a>
+                  <a href="https://www.pinterest.co.uk/hansonsuk/" target="_blank" rel="noopener">
+                    <i style:hover="color: #1a3263;" class="pinterest icon big"></i>
+                  </a>
+                  <a href="https://www.instagram.com/hansons_auctioneers/" target="_blank" rel="noopener">
+                    <i style:hover="color: #1a3263;" class="instagram icon big"></i>
+                  </a>
+                  <a href="https://www.youtube.com/channel/UCO686HdEbfz0CAWB53ebA-Q" target="_blank" rel="noopener">
+                    <i style:hover="color: #1a3263;" class="youtube icon big"></i>
+                  </a>
+                </div>
+            </center>
+        </div><br>
+        <hr>
+        <a href="https://hansonsauctioneers.co.uk/about-us/" class="item"><i class="home icon"></i> About Us</a> <a href="https://hansonsauctioneers.co.uk/contact-hansons/" class="item"><i class="home icon"></i> Contact Us</a> <a href="https://hansonslive.hansonsauctioneers.co.uk/" class="item"><i class="log out icon"style="visibility: visible;"></i> Hansonslive Bidding </a><a href="https://hansonsauctioneers.co.uk/" class="item"><i class="log out icon" ></i> Login/ Register</a>
+    </div>
+  </header>
+
+
+
+
+    <footer>
+      <div class="ui inverted vertical footer segment" id="footerBack">
+        <div class="ui center aligned container">
+          <div class="ui stackable inverted divided grid">
+            <div class="six wide column">
+              <h4 class="ui inverted header">Contact Us:</h4>
+              <div class="ui inverted link list" style="font-size: large;text-decoration: underline;">
+                <p>London</p><a href="tel:02070189300" class="item" style="font-size: large;">0207 018 9300</a>
+
+                <a  href="mailto:service@hansonsauctioneers.co.uk" class="item" style="font-size: large;">service@hansonsauctioneers.co.uk</a>
+                <!-- <a href="#" class="item">Link Two</a> -->
+                <!-- <a href="#" class="item">Link Three</a> -->
+                <!-- <a href="#" class="item">Link Four</a> -->
+              </div>
+            </div>
+            <div class="two wide column">
+              <h4 class="ui inverted header">News</h4>
+              <div class="ui inverted link list">
+                <a href="#" class="item">Cheshire</a>
+                <a href="#" class="item">Pendant</a>
+                <a href="#" class="item">Sir Stiriling Moss</a>
+                <a href="#" class="item">Whiskies</a>
+              </div>
+            </div>
+            <div class="two wide column">
+              <h4 class="ui inverted header">Socials</h4>
+              <div class="ui inverted link list">
+                <a href="https://www.facebook.com/HansonsAuctioneersUK/" class="item">Facebook</a>
+                <a href="https://www.instagram.com/hansons_auctioneers/" class="item">Instagram</a>
+                <a href="https://twitter.com/HansonsUK" class="item">Twitter</a>
+                <a href="https://www.youtube.com/channel/UCO686HdEbfz0CAWB53ebA-Q" class="item">Youtube</a>
+              </div>
+            </div>
+            <div class="six wide column">
+              <h4 class="ui image small"><img src="../assets/fulllogo.png"></h4>
+              <p>Auctioneers and Valuers Ltd.</p>
+              <h1 href="tel:+441283733988" style="text-decoration: underline;"> <i class="fab fa-whatsapp"> </i> +44 (0)1283 733988 </h1>
+            </div>
+          </div>
+          <div class="ui inverted section divider"></div>
+          <img src="../assets/Hansons.png" class="ui centered mini image">
+          <div class="ui horizontal inverted small divided link list">
+            <a class="item" href="#">Site Map</a>
+            <a class="item" href="#">Contact Us</a>
+            <a class="item" href="#">Terms and Conditions</a>
+            <a class="item" href="#">Privacy Policy</a><br><br><br>
+            2023 © Hansons Auctioneers. All rights reserved
+          </div>
+        </div>
+    </footer>
+  </div>
+
+
+
+    <script>
+
+     $('.ui.left.sidebar').sidebar({
+       transition: 'overlay',
+       dimPage: false,
+       closable: false
+     });
+
+     $('.ui.left.sidebar')
+     .sidebar('attach events', '#menu');
+    </script>
+</body>
+</html>
