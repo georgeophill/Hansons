@@ -23,6 +23,12 @@
          .search.icon{
            display:none;
          }
+         .fullImage{
+          width: fit-content;
+          height: fit-content;
+
+         }
+
 
       }
       .container{
@@ -44,7 +50,11 @@
         }
 
         footer{
-        margin-top: auto
+          position: fixed;
+          left: 0;
+          bottom: 0;
+          width: 100%;
+          text-align: center;
       }
     </style>
     <title>Hansons</title>
@@ -53,7 +63,7 @@
   <div class="flex-wrapper">
   <header>
     <div class="ui fixed top attached menu" style="height:65px; background-color: #1a3263; margin-top:0;">
-        <a class="item" id="menu"><i class="large sidebar icon" style="color:white; width:10px;"></i></a> <img alt="" height="90%" width="10%" src="../assets/fulllogo.png" style="margin-top:5px" width="320px;">
+        <a class="item" id="menu"><i class="large sidebar icon" style="color:white; width:10px;"></i></a> <img class="fullImage" alt="" height="90%" width="10%" src="../assets/fulllogo.png" style="margin-top:5px" width="320px;">
         <div class="right menu">
             <div class="ui search" style="margin-top:4%; margin-left:-4%">
                 <div class="ui icon input">
