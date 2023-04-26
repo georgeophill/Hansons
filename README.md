@@ -1,3 +1,4 @@
+
 What this project is trying to solve:
 
 Replicate the client header/footer & navigation.
@@ -9,6 +10,7 @@ The client you can demonstrate this with is Hanson’s auctioneers: https://hans
 
 
 Hansons Header and Footer Integration Page:
+
 
 Setup
 
