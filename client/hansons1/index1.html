@@ -16,21 +16,6 @@
           flex-direction: column;
        }
 
-      @media only screen and (max-width: 600px) {
-         .hide{
-           display:none;
-         }
-         .search.icon{
-           display:none;
-         }
-         .fullImage{
-          width: fit-content;
-          height: fit-content;
-
-         }
-
-
-      }
       .container{
        margin-top:98px;
       }
@@ -38,6 +23,11 @@
         text-align: center;
         margin-top: px;
         border-top: 1px solid #E5E5E5;
+      }
+
+      .ui.left.sidebar{
+        border-radius: 50%;
+        background-color: #1a3263;
       }
 
       .ui.footer.segment {
@@ -56,11 +46,24 @@
           width: 100%;
           text-align: center;
       }
+
+      @media only screen and (max-width: 600px) {
+         .hide{
+           display:none;
+         }
+         .search.icon{
+           display:none;
+         }
+         .fullImage{
+          width: fit-content;
+          height: fit-content;
+
+         }
+      }
     </style>
     <title>Hansons</title>
 </head>
 <body>
-  <div class="flex-wrapper">
   <header>
     <div class="ui fixed top attached menu" style="height:65px; background-color: #1a3263; margin-top:0;">
         <a class="item" id="menu"><i class="large sidebar icon" style="color:white; width:10px;"></i></a> <img class="fullImage" alt="" height="90%" width="10%" src="../assets/fulllogo.png" style="margin-top:5px" width="320px;">
@@ -73,7 +76,7 @@
             </div>
         </div>
     </div>
-    <div class="ui visible left sidebar inverted vertical menu" style="margin-top:64px !important;display:block; width: 240px; height:91% !important;">
+    <div class="ui visible left sidebar inverted vertical menu" style="margin-top:64px !important;display:block; width: 250px; height:90% !important; border-radius: 50%;">
         <div style="margin-top:10%; color:white;">
             <center>
                 <img class="ui sqaure image" height="70px" src="../assets/Hansons.png" style="margin-top:2%" width="70px">
@@ -155,7 +158,7 @@
           </div>
         </div>
     </footer>
-  </div>
+
 
 
 
@@ -164,7 +167,7 @@
      $('.ui.left.sidebar').sidebar({
        transition: 'overlay',
        dimPage: false,
-       closable: false
+       closable: true
      });
 
      $('.ui.left.sidebar')
