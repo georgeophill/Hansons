@@ -8,59 +8,6 @@
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/semantic.min.js">
     </script>
-    <style>
-       body{
-         background-color: #f0f0f0;
-         min-height: 100vh;
-         display: flex;
-          flex-direction: column;
-       }
-
-      .container{
-       margin-top:98px;
-      }
-      footer.footer {
-        text-align: center;
-        margin-top: px;
-        border-top: 1px solid #E5E5E5;
-      }
-
-      .ui.left.sidebar{
-        border-radius: 50%;
-        background-color: #1a3263;
-      }
-
-      .ui.footer.segment {
-          margin: 5em 0em 0em;
-          padding: 5em 0em;
-        }
-
-        #footerBack{
-          background: #1a3263;
-        }
-
-        footer{
-          position: fixed;
-          left: 0;
-          bottom: 0;
-          width: 100%;
-          text-align: center;
-      }
-
-      @media only screen and (max-width: 600px) {
-         .hide{
-           display:none;
-         }
-         .search.icon{
-           display:none;
-         }
-         .fullImage{
-          width: fit-content;
-          height: fit-content;
-
-         }
-      }
-    </style>
     <title>Hansons</title>
 </head>
 <body>
@@ -189,7 +136,7 @@
             <div class="six wide column">
               <h4 class="ui image small"><img src="../assets/fulllogo.png"></h4>
               <p>Auctioneers and Valuers Ltd.</p>
-              <h1 href="tel:+441283733988" style="text-decoration: underline;"> <i class="fab fa-whatsapp"> </i> +44 (0)1283 733988 </h1>
+              <h1 href="tel:+441283733988" style="text-decoration: underline;"> <i href="tel:+441283733988" class="fab fa-whatsapp"> </i> +44 (0)1283 733988 </h1>
             </div>
           </div>
           <div class="ui inverted section divider"></div>
@@ -204,6 +151,8 @@
         </div>
     </footer>
 
+
+    <!-- Javascript -->
     <script>
 
      $('.ui.left.sidebar').sidebar({
@@ -215,5 +164,60 @@
      $('.ui.left.sidebar')
      .sidebar('attach events', '#menu');
     </script>
+
+    <!-- Stylesheets -->
+    <style>
+      body{
+        background-color: #f0f0f0;
+        min-height: 100vh;
+        display: flex;
+          flex-direction: column;
+      }
+
+      .container{
+      margin-top:98px;
+      }
+      footer.footer {
+        text-align: center;
+        margin-top: px;
+        border-top: 1px solid #E5E5E5;
+      }
+
+      .ui.left.sidebar{
+        border-radius: 50%;
+        background-color: #1a3263;
+      }
+
+      .ui.footer.segment {
+          margin: 5em 0em 0em;
+          padding: 5em 0em;
+        }
+
+        #footerBack{
+          background: #1a3263;
+        }
+
+        footer{
+          position: fixed;
+          left: 0;
+          bottom: 0;
+          width: 100%;
+          text-align: center;
+      }
+
+      @media only screen and (max-width: 600px) {
+        .hide{
+          display:none;
+        }
+        .search.icon{
+          display:none;
+        }
+        .fullImage{
+          width: fit-content;
+          height: fit-content;
+
+        }
+      }
+    </style>
 </body>
 </html>
